@@ -42,7 +42,7 @@ function addInfo() {
 }
 
 var table = document.getElementById("table");
-const team = [
+const teams = [
   {
     name: "Leopards FC",
     city: "Nairobi",
@@ -105,9 +105,9 @@ const team = [
   },
 ];
 function displayTeams() {
-    const tbody = document.querySelector("#table tbody")
+    const tbody = document.querySelector("#table")
 
-    team.forEach(team => {
+    teams.forEach(team => {
         const row = document.createElement("tr")
         row.innerHTML = `
           <td>${team.name}</td>
