@@ -19,24 +19,88 @@ function addInfo() {
     emails += names[i][0] + "<br>";
   }
   document.getElementById("output").innerHTML = emails;
-//   let txt = ""
-//   for(let x in names) {
-//     txt += names[x][0] + "<br>"
-//   }  
-//   document.getElementById("output").innerHTML = txt
-//   let nme = ""
-//   for(let x in names) {
-//     nme += names[x][1] + "<br>"
-//   }  
-//   document.getElementById("output2").innerHTML = nme
-//   let text = ""
-//   for(let x of names) {
-//     text += x[0] + "<br>"
-//   }
-//   document.getElementById("output").innerHTML = text
-//   let nme = ""
-//   for(let x of names) {
-//     nme += x[1] + "<br>"
-//   }
-//   document.getElementById("output2").innerHTML = nme
-}   
+  //   let txt = ""
+  //   for(let x in names) {
+  //     txt += names[x][0] + "<br>"
+  //   }
+  //   document.getElementById("output").innerHTML = txt
+  //   let nme = ""
+  //   for(let x in names) {
+  //     nme += names[x][1] + "<br>"
+  //   }
+  //   document.getElementById("output2").innerHTML = nme
+  //   let text = ""
+  //   for(let x of names) {
+  //     text += x[0] + "<br>"
+  //   }
+  //   document.getElementById("output").innerHTML = text
+  //   let nme = ""
+  //   for(let x of names) {
+  //     nme += x[1] + "<br>"
+  //   }
+  //   document.getElementById("output2").innerHTML = nme
+}
+
+var table = document.getElementById("table");
+const teams = [
+  {
+    name: "Leopards FC",
+    city: "Nairobi",
+    foundedYear: 1964,
+    stadium: "Nyayo Stadium",
+  },
+  {
+    name: "Gor Mahia",
+    city: "Kisumu",
+    foundedYear: 1968,
+    stadium: "Moi Stadium",
+  },
+  {
+    name: "Tusker FC",
+    city: "Ruaraka",
+    foundedYear: 1969,
+    stadium: "Ruaraka Grounds",
+  },
+  {
+    name: "KCB FC",
+    city: "Nairobi",
+    foundedYear: 1993,
+    stadium: "Kasarani Annex",
+  },
+  {
+    name: "Sofapaka FC",
+    city: "Machakos",
+    foundedYear: 2004,
+    stadium: "Kenyatta Stadium",
+  },
+  {
+    name: "Bandari FC",
+    city: "Mombasa",
+    foundedYear: 1985,
+    stadium: "Mbaraki Stadium",
+  },
+  {
+    name: "Ulinzi Stars",
+    city: "Nakuru",
+    foundedYear: 1995,
+    stadium: "Afraha Stadium",
+  },
+  {
+    name: "Kariobangi Sharks",
+    city: "Nairobi",
+    foundedYear: 2000,
+    stadium: "Utalii Grounds",
+  },
+  {
+    name: "Nzoia Sugar",
+    city: "Bungoma",
+    foundedYear: 1982,
+    stadium: "Sudi Stadium",
+  },
+  {
+    name: "Vihiga United",
+    city: "Vihiga",
+    foundedYear: 2014,
+    stadium: "Mumias Sports Complex",
+  },
+];
