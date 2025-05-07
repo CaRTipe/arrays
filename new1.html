@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .contact {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contact List</h2>
+  <div id="contact-list"></div>
+
+  <script>
+    // Array of contact objects
+    const contacts = [
+      { name: "Alice Kimani", email: "alice@example.com", phone: "0712345678" },
+      { name: "Brian Otieno", email: "brian@example.com", phone: "0723456789" },
+      { name: "Carol Wanjiku", email: "carol@example.com", phone: "0734567890" }
+    ];
+
+    // Function to display contacts on the UI
+    function displayContacts() {
+      const container = document.getElementById('contact-list');
+      container.innerHTML = ''; // Clear previous content
+
+      contacts.forEach(contact => {
+        const div = document.createElement('div');
+        div.className = 'contact';
+        div.innerHTML = `
+          <strong>Name:</strong> ${contact.name}<br>
+          <strong>Email:</strong> ${contact.email}<br>
+          <strong>Phone:</strong> ${contact.phone}
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Call the function to display contacts on page load
+    displayContacts();
+  </script>
+
+</body>
+</html>
