@@ -42,7 +42,7 @@ function addInfo() {
 }
 
 var table = document.getElementById("table");
-const teams = [
+const team = [
   {
     name: "Leopards FC",
     city: "Nairobi",
@@ -104,3 +104,20 @@ const teams = [
     stadium: "Mumias Sports Complex",
   },
 ];
+function displayTeams() {
+    const tbody = document.querySelector("#table tbody")
+
+    team.forEach(team => {
+        const row = document.createElement("tr")
+        row.innerHTML = `
+          <td>${team.name}</td>
+          <td>${team.city}</td>
+          <td>${team.foundedYear}</td>
+          <td>${team.stadium}</td>
+        `;  
+        
+        tbody.appendChild(row)
+        
+    });
+}
+displayTeams()
